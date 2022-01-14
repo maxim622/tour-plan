@@ -373,6 +373,25 @@ template {
   margin-left: 108px;
 }
 
+.navbar-menu {
+  background-color: #0A223D;
+}
+
+.navbar-menu__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 31px 0;
+}
+
+.navbar-menu__items {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .search {
   width: 350px;
   height: 40px;
