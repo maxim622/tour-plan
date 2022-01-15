@@ -472,6 +472,10 @@ template {
   line-height: 18px;
 }
 
+.breadcrumb-block {
+  background-color: #F5FAFE;
+}
+
 .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
