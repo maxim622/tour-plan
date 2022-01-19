@@ -13,3 +13,19 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider__swiper-button--prev',
   },
 });
+
+
+
+document.addEventListener('keydown', function(event){
+  if (event.code == 'ArrowLeft')
+  {
+    document.querySelector(".slider__swiper-button--prev").click();
+  }
+});
+
+document.addEventListener('keydown', function(event){
+  if (event.code == 'ArrowRight')
+  {
+    document.querySelector(".slider__swiper-button--next").click();
+  }
+});
