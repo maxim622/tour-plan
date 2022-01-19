@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Best Tour Plan</title>
   </head>
@@ -64,55 +65,87 @@
       </div>
       <!-- /.navbar-menu -->
     </header>
-  </body>
-  <div class="breadcrumb-block">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb_link"><a href="#">Home</a></li>
-        <li class="breadcrumb_link"><a href="#">Flash Offers</a></li>
-        <li class="breadcrumb_page" aria-current="page">Grand Hilton Hotel</li>
-      </ol>
+    <div class="breadcrumb-block">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb__link"><a href="#">Home</a></li>
+          <li class="breadcrumb__link"><a href="#">Flash Offers</a></li>
+          <li class="breadcrumb__page" aria-current="page">
+            Grand Hilton Hotel
+          </li>
+        </ol>
+      </div>
+      <!-- /.container -->
     </div>
-    <!-- /.container -->
-  </div>
-  <!-- ./breadcrumb-block -->
-  <section class="hotel">
-    <div class="container">
-      <div class="info">
-        <div class="info_left">
-          <div class="info_hotel-stars hotel-stars">
-            <img class="hotel-stars_star" src="./img/star.svg" alt="star" />
-            <img class="hotel-stars_star" src="./img/star.svg" alt="star" />
-            <img class="hotel-stars_star" src="./img/star.svg" alt="star" />
-            <img class="hotel-stars_star" src="./img/star.svg" alt="star" />
-            <img
-              class="hotel-stars_star hotel-stars_last-star"
-              src="./img/star.svg"
-              alt="star"
-            />
+    <!-- ./breadcrumb-block -->
+    <section class="hotel">
+      <div class="container">
+        <div class="info">
+          <div class="info__left">
+            <div class="info__hotel-stars hotel-stars">
+              <img class="hotel-stars__star" src="./img/star.svg" alt="star" />
+              <img class="hotel-stars__star" src="./img/star.svg" alt="star" />
+              <img class="hotel-stars__star" src="./img/star.svg" alt="star" />
+              <img class="hotel-stars__star" src="./img/star.svg" alt="star" />
+              <img
+                class="hotel-stars__star hotel-stars__last-star"
+                src="./img/star.svg"
+                alt="star"
+              />
+            </div>
+            <!-- ./hotel-stars -->
+            <h1 class="hotel-name info__hotel-name">Grand Hilton hotel</h1>
+            <button class="info__button-flesh-offer">Flesh Offer</button>
+            <span class="info__half-board"
+              >Half-Board/ All Inclusive + Complimentary Activities + Child
+              Stays Free</span
+            >
           </div>
-          <!-- ./hotel-stars -->
-          <h1 class="hotel-name info_hotel-name">Grand Hilton hotel</h1>
-          <button class="info_button-flesh-offer">Flesh Offer</button>
-          <span class="info_half-board"
-            >Half-Board/ All Inclusive + Complimentary Activities + Child Stays
-            Free</span
-          >
-        </div>
-        <!-- ./info_left -->
-        <div class="info_right">
-          <div class="info_hotel-rating">
-            <span class="info_rating-name">User Rattings</span>
-            <div class="info_rating">
-              <span class="info_rating-number">4.5/</span>
-              <span class="info_rating-total-number">5</span>
+          <!-- ./info__left -->
+          <div class="info__right">
+            <div class="info__hotel-rating">
+              <span class="info__rating-name">User Rattings</span>
+              <div class="info__rating">
+                <span class="info__rating-number">4.5/</span>
+                <span class="info__rating-total-number">5</span>
+              </div>
             </div>
           </div>
+          <!-- ./info_right -->
         </div>
-        <!-- ./info_right -->
+        <!-- ./hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <div class="slider__swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="slider__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="slider__swiper-slide swiper-slide">
+                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                </div>
+                <div class="slider__swiper-slide swiper-slide">
+                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                </div>
+                <div class="slider__swiper-slide swiper-slide">
+                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider__swiper-button slider__swiper-button--prev">
+                <!-- <img src="img/slides/swipe-left.svg" alt="" /> -->
+              </button>
+              <button class="slider__swiper-button slider__swiper-button--next">
+                <!-- <img src="img/slides/swipe-right.svg" alt="" /> -->
+              </button>
+            </div>
+          </div>
+          <!-- /.slider -->
+        </div>
       </div>
-      <!-- ./hotel-info -->
-    </div>
-    <!-- /.container -->
-  </section>
+      <!-- /.container -->
+    </section>
+    <!-- ./hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

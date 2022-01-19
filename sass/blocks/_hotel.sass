@@ -1,22 +1,24 @@
 .hotel
   background-color: $background-color
-
-.hotel-name
-  font-weight: bold
-  font-size: 24px
-  line-height: 30px
-  text-transform: uppercase
-  margin: 0
-
-.hotel-stars
-  display: flex
-  justify-content: start
-  width: 48px
-  height: 8px
-  &_star
-    margin-right: 2px
-  &_last-star
-    margin-right: 0
+  &-name
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+    margin: 0
+  &-stars
+    display: flex
+    justify-content: start
+    width: 48px
+    height: 8px
+    &__star
+      margin-right: 2px
+    &__last-star
+      margin-right: 0
+  &-grid
+    display: flex
+    justify-content: space-between
+    padding-bottom: 100px
 
 .info
   display: flex
@@ -24,15 +26,15 @@
   align-items: center
   padding-top: 24px
   padding-bottom: 20px
-  &_left
+  &__left
     display: flex
     flex-wrap: wrap
     align-items: center
-  &_hotel-stars
+  &__hotel-stars
     flex-basis: 100%
-  &_hotel-name
+  &__hotel-name
     margin-top: 5px
-  &_button-flesh-offer
+  &__button-flesh-offer
     width: 70px
     height: 20px
     background: $primar
@@ -44,12 +46,13 @@
     border: none
     margin-top: 5px
     margin-left: 14px
-  &_half-board
+    cursor: pointer
+  &__half-board
     font-weight: normal
     font-size: 12px
     line-height: 15px
     flex-basis: 100%
-  &_hotel-rating
+  &__hotel-rating
     display: flex
     justify-content: space-between
     flex-direction: column
@@ -59,22 +62,65 @@
     background: $primar
     border-radius: 4px
     padding: 8px 6px
-  &_rating-name
+  &__rating-name
     font-weight: 600
     font-size: 8px
     line-height: 10px
     color: $light
-  &_rating
+  &__rating
     display: flex
     align-items: end
-  &_rating-number
+  &__rating-number
     font-weight: bold
     font-size: 14px
     line-height: 18px
     color: $light
-  &_rating-total-number
+  &__rating-total-number
     height: 16.8px
     font-weight: bold
     font-size: 11px
     line-height: 18px
     color: $light
+
+.swiper
+  width: 600px
+  height: 300px
+  border-radius: 8px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    z-index: 10
+
+.slider
+  &__swiper-wrapper
+    position: relative
+  &__swiper-button
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 99
+    width: 30px
+    height: 30px
+    border: none
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    cursor: pointer
+    &--prev
+      left: 18px
+      background-image: url(../img/slides/swipe-left.svg)
+    &--next
+      right: 18px
+      background-image: url(../img/slides/swipe-right.svg)
