@@ -121,13 +121,25 @@
               <div class="slider__swiper-wrapper swiper-wrapper">
                 <!-- Slides -->
                 <div class="slider__swiper-slide swiper-slide">
-                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                  <img
+                    class="swiper-slide__foto"
+                    src="img/slides/slide-1.jpg"
+                    alt="hotel-foto"
+                  />
                 </div>
                 <div class="slider__swiper-slide swiper-slide">
-                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                  <img
+                    class="swiper-slide__foto"
+                    src="img/slides/slide-1.jpg"
+                    alt="hotel-foto"
+                  />
                 </div>
                 <div class="slider__swiper-slide swiper-slide">
-                  <img src="img/slides/slide-1.jpg" alt="hotel-foto" />
+                  <img
+                    class="swiper-slide__foto"
+                    src="img/slides/slide-1.jpg"
+                    alt="hotel-foto"
+                  />
                 </div>
               </div>
               <!-- If we need navigation buttons -->
@@ -140,7 +152,61 @@
             </div>
           </div>
           <!-- /.slider -->
+          <div class="hotel-grid__right-block">
+            <div class="hotel-grid__booking booking">
+              <div class="booking__price-info">
+                <span class="booking__price-name">price starts as</span>
+                <strong class="booking__price">$ 8,500</strong>
+                <span class="booking__price-type">per room / night</span>
+              </div>
+              <!-- ./booking__price-info" -->
+              <div class="booking__room-info">
+                <div class="booking__room-info-item">
+                  <img
+                    src="./img/booking-icon/guest-icon.svg"
+                    alt="guest"
+                    class="booking__room-info-icon"
+                  />
+                  <span class="booking__room-info-text">2 x Guests</span>
+                </div>
+                <!-- /.booking__room-info-item -->
+                <div class="booking__room-info-item">
+                  <img
+                    src="./img/booking-icon/room-icon.svg"
+                    alt="room"
+                    class="booking__room-info-icon"
+                  />
+                  <span class="booking__room-info-text">1 x Room</span>
+                </div>
+                <!-- /.booking__room-info-item -->
+              </div>
+              <!-- ./booking__room-info -->
+              <h2 class="booking__quick-booking">Quick Booking</h2>
+              <a href="tel:12100" class="booking__quick-phone">
+                <img
+                  src="./img/booking-icon/phone-icon.svg"
+                  alt="phone"
+                  class="booking__quick-phone-icon"
+                />
+                <span class="booking__quick-phone-number">12100</span>
+              </a>
+              <button class="booking__button">View Other Options</button>
+            </div>
+            <!-- ./booking -->
+            <div class="map">
+              <iframe
+                class="map__google"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.830779186285!2d79.80322854235853!3d7.57415461992662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sua!4v1642672365672!5m2!1sru!2sua"
+                width="100%"
+                height="100%"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <!-- ./hotel-grid__right-blocks -->
         </div>
+        <!-- ./hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
