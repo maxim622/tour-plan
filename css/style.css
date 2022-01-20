@@ -502,6 +502,7 @@ template {
 
 .hotel {
   background-color: #F5FAFE;
+  padding-bottom: 70px;
 }
 
 .hotel-name {
@@ -540,7 +541,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 .hotel-grid__right-block {
@@ -890,6 +891,102 @@ template {
   border: none;
 }
 
+.subscribe {
+  position: relative;
+  background-image: url(../../img/subscribe-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.subscribe::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.subscribe__wrapper {
+  position: relative;
+  padding: 98px 187px 87px 187px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__inscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.subscribe__large-inscription {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe__field {
+  width: 350px;
+  height: 55px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  padding-left: 33px;
+  padding-right: 75px;
+  width: 100%;
+  height: 100%;
+  background: #F5FAFE;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  border: none;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 65px;
+  border: none;
+  background-color: #EC1F46;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -906,6 +1003,9 @@ template {
   }
   .map {
     width: 310px;
+  }
+  .subscribe__wrapper {
+    padding: 98px 140px 87px 140px;
   }
 }
 
@@ -958,6 +1058,9 @@ template {
   .map {
     width: 370px;
   }
+  .subscribe__wrapper {
+    padding: 92px 0px 93px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -980,6 +1083,9 @@ template {
             justify-content: space-between;
     width: 16px;
     height: 11px;
+  }
+  .hotel {
+    padding-bottom: 60px;
   }
   .swiper {
     height: 310px;
@@ -1024,6 +1130,28 @@ template {
     height: 1px;
     background: #333333;
   }
+  .subscribe__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 76px 0px 83px 0px;
+  }
+  .subscribe__inscription {
+    margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .subscribe__inscription__large-inscription {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe__field {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1032,6 +1160,9 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-bottom: 40px;
   }
   .swiper {
     height: 179px;
