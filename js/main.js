@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const hotelSwiper = new Swiper('.hotel-swiper', {
   // Optional parameters
   loop: true,
 
@@ -9,8 +9,8 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider__swiper-button--next',
-    prevEl: '.slider__swiper-button--prev',
+    nextEl: '.hotel-swiper__button--next',
+    prevEl: '.hotel-swiper__button--prev',
   },
 });
 
@@ -19,13 +19,13 @@ const swiper = new Swiper('.swiper', {
 document.addEventListener('keydown', function(event){
   if (event.code == 'ArrowLeft')
   {
-    document.querySelector(".slider__swiper-button--prev").click();
+    document.querySelector(".hotel-swiper__button--prev").click();
   }
 });
 
 document.addEventListener('keydown', function(event){
   if (event.code == 'ArrowRight')
   {
-    document.querySelector(".slider__swiper-button--next").click();
+    document.querySelector(".hotel-swiper__button--next").click();
   }
 });

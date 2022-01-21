@@ -115,43 +115,40 @@
         </div>
         <!-- ./hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
-            <div class="slider__swiper swiper">
-              <!-- Additional required wrapper -->
-              <div class="slider__swiper-wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div class="slider__swiper-slide swiper-slide">
-                  <img
-                    class="swiper-slide__foto"
-                    src="img/slides/slide-1.jpg"
-                    alt="hotel-foto"
-                  />
-                </div>
-                <div class="slider__swiper-slide swiper-slide">
-                  <img
-                    class="swiper-slide__foto"
-                    src="img/slides/slide-1.jpg"
-                    alt="hotel-foto"
-                  />
-                </div>
-                <div class="slider__swiper-slide swiper-slide">
-                  <img
-                    class="swiper-slide__foto"
-                    src="img/slides/slide-1.jpg"
-                    alt="hotel-foto"
-                  />
-                </div>
+          <div class="hotel-swiper swiper">
+            <div class="hotel-swiper__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="hotel-swiper__slide swiper-slide">
+                <img
+                  class="hotel-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="hotel-foto"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="slider__swiper-button slider__swiper-button--prev">
-                <!-- <img src="img/slides/swipe-left.svg" alt="" /> -->
-              </button>
-              <button class="slider__swiper-button slider__swiper-button--next">
-                <!-- <img src="img/slides/swipe-right.svg" alt="" /> -->
-              </button>
+              <div class="hotel-swiper__slide swiper-slide">
+                <img
+                  class="hotel-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="hotel-foto"
+                />
+              </div>
+              <div class="hotel-swiper__slide swiper-slide">
+                <img
+                  class="hotel-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="hotel-foto"
+                />
+              </div>
             </div>
+            <!-- If we need navigation buttons -->
+            <button class="hotel-swiper__button hotel-swiper__button--prev">
+              <!-- <img src="img/slides/swipe-left.svg" alt="" /> -->
+            </button>
+            <button class="hotel-swiper__button hotel-swiper__button--next">
+              <!-- <img src="img/slides/swipe-right.svg" alt="" /> -->
+            </button>
           </div>
-          <!-- /.slider -->
+          <!-- /.swiper -->
           <div class="hotel-grid__right-block">
             <div class="hotel-grid__booking booking">
               <div class="booking__price-info">
@@ -234,6 +231,49 @@
       <!-- /.container -->
     </section>
     <!-- ./subscribe -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-wrapper">
+          <h2 class="reviews__title">What people think about us</h2>
+          <div class="reviews-swiper swiper">
+            <div class="reviews-swiper__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="reviews-swiper__slide swiper-slide">
+                <img
+                  class="reviews-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="reviews-foto"
+                />
+              </div>
+              <div class="reviews-swiper__slide swiper-slide">
+                <img
+                  class="reviews-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="reviews-foto"
+                />
+              </div>
+              <div class="reviews-swiper__slide swiper-slide">
+                <img
+                  class="reviews-swiper__slide-foto"
+                  src="img/slides/slide-1.jpg"
+                  alt="reviews-foto"
+                />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button class="reviews-swiper__button reviews-swiper__button--prev">
+              <!-- <img src="img/slides/swipe-left.svg" alt="" /> -->
+            </button>
+            <button class="reviews-swiper__button reviews-swiper__button--next">
+              <!-- <img src="img/slides/swipe-right.svg" alt="" /> -->
+            </button>
+          </div>
+          <!-- /.swiper -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
