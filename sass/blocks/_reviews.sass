@@ -1,0 +1,97 @@
+
+.reviews
+  background-color: $background-color
+  &-wrapper
+    padding-top: 40px
+    padding-bottom: 70px
+  &__title
+    margin: 0 auto 70px
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-swiper
+    position: relative
+    &__slide
+      &-container
+        position: relative
+        margin: auto
+        width: 731px
+        height: 280px
+        display: flex
+        margin-top: 45px
+        padding-bottom: 70px
+        flex-direction: column
+        align-items: center
+        background-color: $light
+        border-radius: 8px
+        &:after
+          position: absolute
+          content: ''
+          top: 13px
+          left: 64px
+          width: 70px
+          height: 48px
+          background-image: url('../../img/quote-left.svg')
+        &::before
+          position: absolute
+          content: ''
+          right: 60px
+          bottom: 114px
+          width: 70px
+          height: 48px
+          background-image: url('../../img/quote-right.svg')
+      &-avatar
+        width: 90px
+        height: 90px
+        object-fit: cover
+        border-radius: 50%
+        margin-top: -45px
+        margin-bottom: 9px
+    &__user-name
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primar
+      margin-bottom: 10px
+    &__date
+      font-size: 10px
+      line-height: 13px
+      color: $black
+      margin-bottom: 4px
+    &__stars
+      margin-bottom: 32px
+    &__message
+      font-weight: normal
+      font-size: 12px
+      line-height: 19px
+      text-align: justify
+      color: $text-color
+      margin-top: 0
+      margin-bottom: 0
+      margin-left: 98px
+      margin-right: 98px
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      cursor: pointer
+      &--prev
+        left: 18px
+        background-image: url(../../img/reviews-swiper-left.svg)
+      &--next
+        right: 18px
+        background-image: url(../../img/reviews-swiper-right.svg)

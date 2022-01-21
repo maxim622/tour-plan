@@ -29,3 +29,19 @@ document.addEventListener('keydown', function(event){
     document.querySelector(".hotel-swiper__button--next").click();
   }
 });
+
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-swiper__button--next',
+    prevEl: '.reviews-swiper__button--prev',
+  },
+});

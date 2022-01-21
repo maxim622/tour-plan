@@ -7,15 +7,6 @@
     line-height: 30px
     text-transform: uppercase
     margin: 0
-  &-stars
-    display: flex
-    justify-content: start
-    width: 48px
-    height: 8px
-    &__star
-      margin-right: 2px
-    &__last-star
-      margin-right: 0
   &-grid
     display: flex
     justify-content: space-between
@@ -74,6 +65,16 @@
       &--next
         right: 18px
         background-image: url(../img/slides/swipe-right.svg)
+
+.stars
+  display: flex
+  justify-content: start
+  width: 48px
+  height: 8px
+  &__star
+    margin-right: 2px
+    &__last-star
+      margin-right: 0
 
 .info
   display: flex
@@ -137,7 +138,6 @@
     line-height: 18px
     color: $light
 
-.hotel
 .booking
   width: 100%
   display: flex
