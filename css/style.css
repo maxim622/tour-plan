@@ -894,11 +894,24 @@ template {
 
 .subscribe {
   position: relative;
+}
+
+.subscribe__container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
 }
 
 .subscribe__wrapper {
   position: relative;
+  z-index: 2;
   padding: 98px 187px 87px 187px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,7 +1036,7 @@ template {
   left: 64px;
   width: 70px;
   height: 48px;
-  background-image: url("../../img/quote-left.svg");
+  background-image: url("../img/quote-left.svg");
 }
 
 .reviews-swiper__slide-container::before {
@@ -1033,7 +1046,7 @@ template {
   bottom: 114px;
   width: 70px;
   height: 48px;
-  background-image: url("../../img/quote-right.svg");
+  background-image: url("../img/quote-right.svg");
 }
 
 .reviews-swiper__slide-avatar {
@@ -1105,12 +1118,12 @@ template {
 
 .reviews-swiper__button--prev {
   left: 18px;
-  background-image: url(../../img/reviews-swiper-left.svg);
+  background-image: url(../img/reviews-swiper-left.svg);
 }
 
 .reviews-swiper__button--next {
   right: 18px;
-  background-image: url(../../img/reviews-swiper-right.svg);
+  background-image: url(../img/reviews-swiper-right.svg);
 }
 
 .activities {
@@ -1188,21 +1201,20 @@ template {
   padding: 24px 26px;
   padding-right: 29px;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
 .activities-card__title {
+  position: absolute;
+  left: 26px;
+  bottom: 72px;
+  right: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: end;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1211,6 +1223,9 @@ template {
 }
 
 .activities-card__button {
+  position: absolute;
+  left: 26px;
+  bottom: 24px;
   width: 100px;
   height: 30px;
   background-color: #EC1F46;
