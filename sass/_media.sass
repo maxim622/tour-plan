@@ -27,7 +27,7 @@
 
 @media (max-width: 992px)
   .container
-    width: 760px
+    width: 755px
 
   .navbar
     &-top
@@ -94,12 +94,34 @@
     &-cards
       flex-wrap: wrap
     &-card
-      width: 370px
+      width: 367px
       height: 255px
     &-card:first-child
       margin-bottom: 20px
 
 @media (max-width: 768px)
+  .container
+    width: 700px
+
+  .booking
+    width: 340px
+
+  .map
+    width: 340px
+
+  .reviews
+    &-swiper
+      &__button
+        &--prev
+          left: 0
+        &--next
+          right: 0
+
+  .activities
+    &-card
+      width: 339px
+
+@media (max-width: 720px)
   .container
     width: 560px
 
@@ -253,11 +275,52 @@
   .container
     width: 280px
 
+  .breadcrumb
+    padding-bottom: 0
+
+  .info
+    padding-bottom: 38px
+    &__hotel-stars
+      margin-right: 16px
+
   .booking
+    padding-right: 21px
     &__quick-booking
       flex-basis: 60%
+    &__room-info-item:not(:last-child)
+      margin-bottom: 6px
+
+  .map
+    height: 172px
+
+  .subscribe
+    &__large-inscription
+      margin-top: 5px
+    &__input
+      padding-left: 20px
 
   .reviews
     &__title
-      font-size: 20px
-      line-height: 26px
+      width: 250px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+    &-swiper
+      &__message
+        text-align: left
+
+  .activities
+    &__title
+      margin-bottom: 36px
+    &-cards
+      &__card:first-child
+        order: 0
+      &__card:nth-child(2)
+        order: 2
+      &__card:nth-child(3)
+        order: 1
+        margin-bottom: 28px
+      &__card:nth-child(4)
+        order: 3
