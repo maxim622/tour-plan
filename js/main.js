@@ -14,8 +14,6 @@ const hotelSwiper = new Swiper('.hotel-swiper', {
   },
 });
 
-
-
 document.addEventListener('keydown', function(event){
   if (event.code == 'ArrowLeft')
   {
