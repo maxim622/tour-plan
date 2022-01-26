@@ -64,6 +64,12 @@
   .map
     width: 370px
 
+  .catalog-grid
+    display: grid
+    grid-template: repeat(3, 500px) / repeat(2, 1fr)
+    grid-gap: 30px
+    padding-bottom: 70px
+
   .subscribe
     &__wrapper
       padding: 92px 0px 93px 0px
@@ -149,6 +155,33 @@
   .map
     width: 270px
 
+  .catalog-grid
+    grid-template: repeat(3, 400px) / repeat(2, 1fr)
+
+  .main-card
+    height: 400px
+    &__text
+      display: none
+    &__old-price
+      margin-top: 104px
+
+  .card
+    height: 400px
+    &__image
+      height: 150px
+      &-wrapper
+        height: 150px
+    &__description
+      height: 250px
+    &-booking
+      &__book-button
+        width: 100px
+        height: 35px
+        font-size: 12px
+        line-height: 15px
+    &__old-price
+      margin-top: 5px
+
   .info
     &__right
       display: none
@@ -230,6 +263,7 @@
         margin-bottom: 20px
 
 @media (max-width: 576px)
+
   .container
     width: 470px
 
@@ -266,6 +300,90 @@
     width: 100%
     height: 179px
 
+  .catalog
+    &__title
+      font-size: 28px
+      line-height: 36px
+
+  .catalog-grid
+    grid-template: repeat(2, 400px) / 1fr 1fr
+    grid-gap: 15px
+
+  .main-card
+    flex-direction: column
+    position: relative
+    width: 100%
+    height: 400px
+    grid-column-end: 2
+    &__stars
+      display: none
+    &__flash-offer
+      position: absolute
+      width: 60px
+      height: 18px
+      left: 0
+      top: 26px
+      background: $primar
+      border-radius: 0px 4px 4px 0px
+      padding: 4px 9px 4px 9px
+      color: $light
+      font-style: normal
+      font-weight: 600
+      font-size: 8px
+      line-height: 10px
+    &__image-wrapper
+      height: 150px
+    &__image
+      object-fit: cover
+      width: 100%
+      height: 100%
+    &__description
+      display: flex
+      flex-direction: column
+      padding: 25px 16px 20px 27px
+    &__title
+      margin-top: 0px
+      margin-bottom: 23px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &__room-info
+      margin-bottom: 24px
+    &__old-price
+      margin-top: 0px
+      font-size: 12px
+      line-height: 18px
+    &__text
+      display: none
+
+  .card
+    height: 400px
+    &:last-child
+      display: none
+    &__image
+      height: 150px
+      &-wrapper
+        height: 150px
+    &__description
+      padding: 25px 16px 20px 27px
+      height: 250px
+    &-booking
+      &__price
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 26px
+      &__book-button
+        width: 100px
+        height: 35px
+        font-size: 12px
+        line-height: 15px
+    &__old-price
+      margin-top: 0px
+      font-size: 12px
+      line-height: 18px
+
   .reviews
     &__title
       font-size: 22px
@@ -292,6 +410,10 @@
 
   .map
     height: 172px
+
+  .catalog-grid
+    grid-template: repeat(4, 400px) / 1fr
+    grid-gap: 15px
 
   .subscribe
     &__large-inscription
