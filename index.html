@@ -15,7 +15,7 @@
     <title>Best Tour Plan</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -52,6 +52,30 @@
       <div class="navbar-menu">
         <div class="container">
           <nav class="navbar-menu__buttons">
+            <a
+              href="#"
+              class="user navbar-menu__user navbar-menu__user--mobile--hidden"
+            >
+              <img src="img/avatar.png" alt="avatar" class="user__avatar" />
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+            <form
+              action="#"
+              class="search navbar-menu__search navbar-menu__search--mobile--hidden"
+            >
+              <input
+                type="text"
+                placeholder="Search Location"
+                class="search__input"
+              />
+              <button class="search__button">
+                <img
+                  src="img/search.svg"
+                  alt="button-image"
+                  class="search__button-image"
+                />
+              </button>
+            </form>
             <a href="#" class="navbar-menu__item">All Deals</a>
             <a href="#" class="navbar-menu__item">Hotels</a>
             <a href="#" class="navbar-menu__item">Activities</a>
@@ -211,7 +235,13 @@
         <h2 class="catalog__title">Other Packages</h2>
         <div class="catalog-grid">
           <div class="catalog-grid__main-card main-card">
-            <div class="main-card__image-wrapper"><img src="./img/catalog/main-card-image.jpeg" alt="Hotel Blue Haven" class="main-card__image"></div>
+            <div class="main-card__image-wrapper">
+              <img
+                src="./img/catalog/main-card-image.jpeg"
+                alt="Hotel Blue Haven"
+                class="main-card__image"
+              />
+            </div>
             <div class="main-card__description">
               <div class="main-card__stars stars">
                 <img class="stars__star" src="./img/star.svg" alt="star" />
@@ -226,7 +256,13 @@
               </div>
               <!-- ./stars -->
               <h3 class="main-card__title">Hotel Blue Haven</h3>
-              <p class="main-card__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+              <p class="main-card__text">
+                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
+                enim laborum magna llit. Ipsum est fugiat velit ea llamco do
+                esse ut in veniam sun in onsequat. Aute quis duis epteur
+                excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
+                mollit. Ipsum est fugiat velit ea ullamco do
+              </p>
               <div class="main-card__room-info card-room-info">
                 <div class="card-room-info__item">
                   <img
@@ -234,7 +270,9 @@
                     alt="address-icon"
                     class="card-room-info__icon"
                   />
-                  <span class="card-room-info__text">1749 Wheeler Ridge  Delaware</span>
+                  <span class="card-room-info__text"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
                 </div>
                 <!-- /.card-room-info__item -->
                 <div class="card-room-info__item">
@@ -269,7 +307,13 @@
           </div>
           <!-- /.catalog-main-card -->
           <div class="catalog-grid__card card">
-            <div class="card__image-wrapper"><img src="./img/catalog/card-image-1.jpeg" alt="LUX* Belle Mare" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="./img/catalog/card-image-1.jpeg"
+                alt="LUX* Belle Mare"
+                class="card__image"
+              />
+            </div>
             <div class="card__description">
               <h3 class="card__title">LUX* Belle Mare</h3>
               <div class="card__room-info card-room-info">
@@ -279,7 +323,9 @@
                     alt="address-icon"
                     class="card-room-info__icon"
                   />
-                  <span class="card-room-info__text">1749 Wheeler Ridge  Delaware</span>
+                  <span class="card-room-info__text"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
                 </div>
                 <!-- /.card-room-info__item -->
                 <div class="card-room-info__item">
@@ -314,7 +360,13 @@
           </div>
           <!-- /.catalog-card -->
           <div class="catalog-grid__card card">
-            <div class="card__image-wrapper"><img src="./img/catalog/card-image-2.jpeg" alt="White Palace" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="./img/catalog/card-image-2.jpeg"
+                alt="White Palace"
+                class="card__image"
+              />
+            </div>
             <div class="card__description">
               <h3 class="card__title">White Palace</h3>
               <div class="card__room-info card-room-info">
@@ -324,7 +376,9 @@
                     alt="address-icon"
                     class="card-room-info__icon"
                   />
-                  <span class="card-room-info__text">1749 Wheeler Ridge  Delaware</span>
+                  <span class="card-room-info__text"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
                 </div>
                 <!-- /.card-room-info__item -->
                 <div class="card-room-info__item">
@@ -359,7 +413,13 @@
           </div>
           <!-- /.catalog-card -->
           <div class="catalog-grid__card card">
-            <div class="card__image-wrapper"><img src="./img/catalog/card-image-3.jpeg" alt="Luxury Place" class="card__image"></div> 
+            <div class="card__image-wrapper">
+              <img
+                src="./img/catalog/card-image-3.jpeg"
+                alt="Luxury Place"
+                class="card__image"
+              />
+            </div>
             <div class="card__description">
               <h3 class="card__title">Luxury Place</h3>
               <div class="card__room-info card-room-info">
@@ -369,7 +429,9 @@
                     alt="address-icon"
                     class="card-room-info__icon"
                   />
-                  <span class="card-room-info__text">1749 Wheeler Ridge  Delaware</span>
+                  <span class="card-room-info__text"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
                 </div>
                 <!-- /.card-room-info__item -->
                 <div class="card-room-info__item">
@@ -404,7 +466,13 @@
           </div>
           <!-- /.catalog-card -->
           <div class="catalog-grid__card card">
-            <div class="card__image-wrapper"><img src="./img/catalog/card-image-4.jpeg" alt="Hotel Five Star" class="card__image"></div>
+            <div class="card__image-wrapper">
+              <img
+                src="./img/catalog/card-image-4.jpeg"
+                alt="Hotel Five Star"
+                class="card__image"
+              />
+            </div>
             <div class="card__description">
               <h3 class="card__title">Hotel Five Star</h3>
               <div class="card__room-info card-room-info">
@@ -414,7 +482,9 @@
                     alt="address-icon"
                     class="card-room-info__icon"
                   />
-                  <span class="card-room-info__text">1749 Wheeler Ridge  Delaware</span>
+                  <span class="card-room-info__text"
+                    >1749 Wheeler Ridge Delaware</span
+                  >
                 </div>
                 <!-- /.card-room-info__item -->
                 <div class="card-room-info__item">
@@ -740,12 +810,9 @@
           <div class="social footer-main__social">
             <h3 class="social__title">Social Network</h3>
             <div class="social__icons">
-              <a href="#" class="social__link">
-              </a>
               <a href="#" class="social__link"></a>
-              </a>
               <a href="#" class="social__link"></a>
-              </a>
+              <a href="#" class="social__link"></a>
             </div>
             <!-- ./footer-main__social-icons -->
           </div>
@@ -770,20 +837,48 @@
           <!-- ./footer-list -->
           <div class="contact footer-main__contact">
             <h3 class="contact__title">Contact Details</h3>
-            <span class="contact__text">Feel free to contact us by phone, email or by our contact form</span>
+            <span class="contact__text"
+              >Feel free to contact us by phone, email or by our contact
+              form</span
+            >
             <div class="contact__items">
               <div class="contact__item">
-                <div class="contact__icon-wrapper"><img src="img/contact-icon/address-icon.svg" alt="contact__icon" class="contact__icon"></div>
-                <span class="contact__info">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+                <div class="contact__icon-wrapper">
+                  <img
+                    src="img/contact-icon/address-icon.svg"
+                    alt="contact__icon"
+                    class="contact__icon"
+                  />
+                </div>
+                <span class="contact__info"
+                  >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States</span
+                >
               </div>
               <!-- ./contact__item -->
               <div class="contact__item">
-                <div class="contact__icon-wrapper"><img src="img/contact-icon/contact-phone-icon.svg" alt="contact__icon" class="contact__icon"></div>
-                <span class="contact__info">Tel (business hours) : 269 1500 <br />Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
+                <div class="contact__icon-wrapper">
+                  <img
+                    src="img/contact-icon/contact-phone-icon.svg"
+                    alt="contact__icon"
+                    class="contact__icon"
+                  />
+                </div>
+                <span class="contact__info"
+                  >Tel (business hours) : 269 1500 <br />Tel (hotline) Monday -
+                  Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel
+                  (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span
+                >
               </div>
               <!-- ./contact__item -->
               <div class="contact__item">
-                <div class="contact__icon-wrapper"><img src="img/contact-icon/email-icon.svg" alt="contact__icon" class="contact__icon"></div>
+                <div class="contact__icon-wrapper">
+                  <img
+                    src="img/contact-icon/email-icon.svg"
+                    alt="contact__icon"
+                    class="contact__icon"
+                  />
+                </div>
                 <span class="contact__info">cherly.lawson@example.com</span>
               </div>
               <!-- ./contact__item -->
@@ -794,10 +889,23 @@
           <div class="form footer-main__form">
             <h3 class="form__title">Send us a message</h3>
             <form class="form__contact-area" action="#">
-              <input class="form__input" type="text" placeholder="Your Full Name*">
-              <input class="form__input" type="text" placeholder="Phone Number*">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Your Full Name*"
+              />
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Phone Number*"
+              />
             </form>
-            <textarea class="form__message" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea
+              class="form__message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
             <div class="form__send-button">
               <button class="form__button">Send</button>
               <span class="form__help-text">* Required Fields</span>
@@ -808,11 +916,23 @@
         <!-- /.footer-main -->
         <div class="footer-bottom">
           <ol class="footer-bottom__list">
-            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Disclaimer</a></li>
-            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Conditions of use</a></li>
-            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Cancellation policy</a></li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__item-link" href="#">Disclaimer</a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__item-link" href="#">Conditions of use</a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__item-link" href="#"
+                >Cancellation policy</a
+              >
+            </li>
           </ol>
-          <img src="./img/partner-icon/partner-icon.png" alt="partner-icon" class="footer-bottom__partner">
+          <img
+            src="./img/partner-icon/partner-icon.png"
+            alt="partner-icon"
+            class="footer-bottom__partner"
+          />
         </div>
         <!-- /.footer-bottom -->
       </div>

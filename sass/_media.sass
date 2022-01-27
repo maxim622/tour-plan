@@ -186,13 +186,45 @@
       justify-content: center
 
 @media (max-width: 720px)
+
   .container
     width: 560px
 
+  .breadcrumb-block
+    padding-top: 79px
+
   .navbar
+    &--mobile
+      &--fixed
+        background: $light
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
     &-menu, &__search, &__user
       display: none
-
+    &-menu
+      &__buttons
+        flex-direction: column
+        align-items: center
+      &__item
+        margin-bottom: 20px
+      &--mobile--hidden
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 78px
+      &__search
+        margin-bottom: 39px
+        &--mobile--hidden
+          display: block
+      &__user
+        flex-direction: column
+        &--mobile--hidden
+          display: flex
     &-top
       &__navigation-buttons
         display: flex
@@ -200,6 +232,18 @@
         justify-content: space-between
         width: 16px
         height: 11px
+
+  .user
+    margin-bottom: 27px
+    &__avatar
+      margin-right: 0
+      margin-bottom: 10px
+    &__name
+      &--light
+        color: $light
+
+  .search
+    width: 243px
 
   .hotel
     padding-bottom: 60px
