@@ -677,7 +677,7 @@
               alt="footer-logo"
               class="footer-link__logo"
           /></a>
-          <div class="footer-main__list footer-list">
+          <div class="footer-main__list-1 footer-list">
             <h3 class="footer-list__title">ALL CATEGORIES</h3>
             <ol class="footer-list__links">
               <li class="footer-list__item">
@@ -707,7 +707,7 @@
             </ol>
           </div>
           <!-- ./footer-list -->
-          <div class="footer-main__list footer-list">
+          <div class="footer-main__list-2 footer-list">
             <h3 class="footer-list__title">ADDITIONAL INFORMATION</h3>
             <ol class="footer-list__links">
               <li class="footer-list__item">
@@ -741,31 +741,16 @@
             <h3 class="social__title">Social Network</h3>
             <div class="social__icons">
               <a href="#" class="social__link">
-                <img
-                  src="./img/social-icon/fb-icon.svg"
-                  alt="social-icons"
-                  class="social__icon"
-                />
               </a>
               <a href="#" class="social__link"></a>
-                <img
-                  src="./img/social-icon/yt-icon.svg"
-                  alt="social-icons"
-                  class="social__icon"
-                />
               </a>
               <a href="#" class="social__link"></a>
-                <img
-                  src="./img/social-icon/inst-icon.svg"
-                  alt="social-icons"
-                  class="social__icon"
-                />
               </a>
             </div>
             <!-- ./footer-main__social-icons -->
           </div>
           <!-- ./footer-main__social -->
-          <div class="footer-main__list footer-list">
+          <div class="footer-main__list-3 footer-list">
             <h3 class="footer-list__title">LEGAL INFORMATION</h3>
             <ol class="footer-list__links">
               <li class="footer-list__item">
@@ -786,21 +771,24 @@
           <div class="contact footer-main__contact">
             <h3 class="contact__title">Contact Details</h3>
             <span class="contact__text">Feel free to contact us by phone, email or by our contact form</span>
-            <div class="contact__item">
-              <div class="contact__icon-wrapper"><img src="img/contact-icon/address-icon.svg" alt="contact__icon" class="contact__icon"></div>
-              <span class="contact__info">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+            <div class="contact__items">
+              <div class="contact__item">
+                <div class="contact__icon-wrapper"><img src="img/contact-icon/address-icon.svg" alt="contact__icon" class="contact__icon"></div>
+                <span class="contact__info">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+              </div>
+              <!-- ./contact__item -->
+              <div class="contact__item">
+                <div class="contact__icon-wrapper"><img src="img/contact-icon/contact-phone-icon.svg" alt="contact__icon" class="contact__icon"></div>
+                <span class="contact__info">Tel (business hours) : 269 1500 <br />Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
+              </div>
+              <!-- ./contact__item -->
+              <div class="contact__item">
+                <div class="contact__icon-wrapper"><img src="img/contact-icon/email-icon.svg" alt="contact__icon" class="contact__icon"></div>
+                <span class="contact__info">cherly.lawson@example.com</span>
+              </div>
+              <!-- ./contact__item -->
             </div>
-            <!-- ./contact__item -->
-            <div class="contact__item">
-              <div class="contact__icon-wrapper"><img src="img/contact-icon/contact-phone-icon.svg" alt="contact__icon" class="contact__icon"></div>
-              <span class="contact__info">Tel (business hours) : 269 1500 <br />Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
-            </div>
-            <!-- ./contact__item -->
-            <div class="contact__item">
-              <div class="contact__icon-wrapper"><img src="img/contact-icon/email-icon.svg" alt="contact__icon" class="contact__icon"></div>
-              <span class="contact__info">cherly.lawson@example.com</span>
-            </div>
-            <!-- ./contact__item -->
+            <!-- ./contact__items -->
           </div>
           <!-- ./contact -->
           <div class="form footer-main__form">
@@ -810,17 +798,19 @@
               <input class="form__input" type="text" placeholder="Phone Number*">
             </form>
             <textarea class="form__message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button class="form__button">Send</button>
-            <span class="form__help-text">* Required Fields</span>
+            <div class="form__send-button">
+              <button class="form__button">Send</button>
+              <span class="form__help-text">* Required Fields</span>
+            </div>
           </div>
           <!-- ./form -->
         </div>
         <!-- /.footer-main -->
         <div class="footer-bottom">
           <ol class="footer-bottom__list">
-            <li class="footer-bottom__item">Disclaimer</li>
-            <li class="footer-bottom__item">Conditions of use</li>
-            <li class="footer-bottom__item">Cancellation policy</li>
+            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Disclaimer</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Conditions of use</a></li>
+            <li class="footer-bottom__item"><a class="footer-bottom__item-link" href="#">Cancellation policy</a></li>
           </ol>
           <img src="./img/partner-icon/partner-icon.png" alt="partner-icon" class="footer-bottom__partner">
         </div>
