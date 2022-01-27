@@ -175,13 +175,13 @@
     &-bottom
       padding-bottom: 33px
     &-main
-      grid-template: min(183px) min(223px) min(406px) minmax(317px , 317px) / minmax(188px , 188px) minmax(311px , 311px) minmax(200px , 200px)
-      padding-top: 41px
+      grid-template: min(173px) min(223px) min(406px) minmax(317px , 317px) / minmax(188px , 188px) minmax(311px , 311px) minmax(200px , 200px)
+      padding-top: 36px
       &__social
         padding-bottom: 0
     &-link
-      width: 104px
-      height: 120px
+      width: 96px
+      height: 110px
       align-self: center
       justify-content: center
 
@@ -329,10 +329,13 @@
   .footer
     &-bottom
       padding-bottom: 21px
+      &__list
+        width: 277px
+        margin-bottom: 10px
     &-main
-      padding-top: 39px
+      padding-top: 69px
       padding-bottom: 0
-      grid-template: min(180px) min(97px) min(157px) min(201px) min(259px) min-content min-content / minmax(100px , 1fr)
+      grid-template: min(150px) min(97px) min(157px) min(201px) min(259px) min-content min-content / minmax(100px , 1fr)
       &__list-1
         grid-column: 1 / 2
         grid-row: 5 / 6
@@ -359,6 +362,8 @@
     &-link
       grid-column: 1 / 2
       grid-row: 1 / 2
+      align-self: start
+      justify-content: flex-start
     &-bottom
       height: 68px
       padding-top: 0px
@@ -375,8 +380,21 @@
       padding-right: 0px
       margin-bottom: 23px
 
+  .contact
+    &__items
+      margin-top: 16px
+    &__info
+      line-height: 22px
+    &__icon-wrapper
+      margin-top: 4px
+      margin-left: 3px
+      min-width: 19px
+      height: 19px
+      margin-right: 7px
   .form
     width: 100%
+    &__title
+      margin-bottom: 15px
     &__contact-area
       flex-direction: column
       margin-bottom: 0
@@ -387,13 +405,14 @@
       height: 50px
     &__message
       width: 100%
+      margin-bottom: 15px
     &__send-button
       flex-direction: column
       justify-content: flex-start
       align-items: flex-start
     &__button
       order: 1
-      margin-bottom: 30px
+      margin-bottom: 25px
     &__help-text
       margin-bottom: 15px
 

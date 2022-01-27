@@ -2054,17 +2054,17 @@ template {
     padding-bottom: 33px;
   }
   .footer-main {
-    -ms-grid-rows: 183px 223px 406px minmax(317px, 317px);
+    -ms-grid-rows: 173px 223px 406px minmax(317px, 317px);
     -ms-grid-columns: minmax(188px, 188px) minmax(311px, 311px) minmax(200px, 200px);
-        grid-template: 183px 223px 406px minmax(317px, 317px)/minmax(188px, 188px) minmax(311px, 311px) minmax(200px, 200px);
-    padding-top: 41px;
+        grid-template: 173px 223px 406px minmax(317px, 317px)/minmax(188px, 188px) minmax(311px, 311px) minmax(200px, 200px);
+    padding-top: 36px;
   }
   .footer-main__social {
     padding-bottom: 0;
   }
   .footer-link {
-    width: 104px;
-    height: 120px;
+    width: 96px;
+    height: 110px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -2259,14 +2259,18 @@ template {
   .footer-bottom {
     padding-bottom: 21px;
   }
+  .footer-bottom__list {
+    width: 277px;
+    margin-bottom: 10px;
+  }
   .footer-main {
-    padding-top: 39px;
+    padding-top: 69px;
     padding-bottom: 0;
-    -ms-grid-rows: 180px 97px 157px 201px 259px -webkit-min-content -webkit-min-content;
-    -ms-grid-rows: 180px 97px 157px 201px 259px min-content min-content;
+    -ms-grid-rows: 150px 97px 157px 201px 259px -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: 150px 97px 157px 201px 259px min-content min-content;
     -ms-grid-columns: minmax(100px, 1fr);
-        grid-template: 180px 97px 157px 201px 259px -webkit-min-content min-content/minmax(100px, 1fr);
-        grid-template: 180px 97px 157px 201px 259px min-content min-content/minmax(100px, 1fr);
+        grid-template: 150px 97px 157px 201px 259px -webkit-min-content min-content/minmax(100px, 1fr);
+        grid-template: 150px 97px 157px 201px 259px min-content min-content/minmax(100px, 1fr);
   }
   .footer-main__list-1 {
     -ms-grid-column: 1;
@@ -2331,6 +2335,12 @@ template {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .footer-bottom {
     height: 68px;
@@ -2359,8 +2369,24 @@ template {
     padding-right: 0px;
     margin-bottom: 23px;
   }
+  .contact__items {
+    margin-top: 16px;
+  }
+  .contact__info {
+    line-height: 22px;
+  }
+  .contact__icon-wrapper {
+    margin-top: 4px;
+    margin-left: 3px;
+    min-width: 19px;
+    height: 19px;
+    margin-right: 7px;
+  }
   .form {
     width: 100%;
+  }
+  .form__title {
+    margin-bottom: 15px;
   }
   .form__contact-area {
     -webkit-box-orient: vertical;
@@ -2378,6 +2404,7 @@ template {
   }
   .form__message {
     width: 100%;
+    margin-bottom: 15px;
   }
   .form__send-button {
     -webkit-box-orient: vertical;
@@ -2395,7 +2422,7 @@ template {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .form__help-text {
     margin-bottom: 15px;
