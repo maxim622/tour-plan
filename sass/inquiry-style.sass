@@ -1,0 +1,45 @@
+$primar: #EC1F46
+$text-color: #333333
+$dark: #0A223D
+$black: #000000
+$light: #ffffff
+$background-color: #F5FAFE
+$footer-text-color: #BDBDBD
+
+*
+  box-sizing: border-box
+
+.message
+  height: 250px
+  background-color: $background-color
+  color: $text-color
+  &__title
+    margin-top: 0
+    padding-top: 50px
+    color: inherit
+  &__text
+    color: inherit
+  &__button
+    padding-right: 25px
+    padding-left: 25px
+    height: 45px
+    background: $primar
+    border: none
+    border-radius: 4px
+    color: $light
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    margin-top: 17px
+    cursor: pointer
+
+@media (max-width: 576px)
+
+  .message
+    height: 300px
+    &__title
+      font-size: 26px
+    &__text
+      font-size: 18px
