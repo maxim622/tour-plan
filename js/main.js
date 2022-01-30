@@ -53,3 +53,18 @@ menuButton.addEventListener("click", function() {
   document.querySelector(".navigation-buttons__line-2").classList.toggle("navigation-buttons__line--invisible")
   document.querySelector(".navigation-buttons__line-3").classList.toggle("navigation-buttons__line--invisible")
 });
+
+var modal  = $(".booking__button")
+var modalClose = $(".modal__close-button")
+
+modal.on("click", function() {
+  $(".modal__overlay").addClass("modal__overlay--visible")
+  $(".modal__dialog").addClass("modal__dialog--visible")
+});
+
+modalClose.on("click", function() {
+  event.preventDefault()
+  $(".modal__overlay").removeClass("modal__overlay--visible")
+  $(".modal__dialog").removeClass("modal__dialog--visible")
+});
+

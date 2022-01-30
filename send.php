@@ -9,6 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$modalEmail = $_POST['modal-email'];
 
 // Формирование самого письма
 $title = "Новое письмо пользователя Best tour plane";
@@ -17,13 +18,23 @@ if(isset($_POST['email'])){
     <h2>Новый запрос на регистрацию</h2>
     <b>Почта пользователя:</b>$email<br>
     ";
-} else {
-    $body = "
-    <h2>Новое письмо</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
-    <b>Сообщение:</b><br>$message
-    ";
+} else { 
+    if(isset($_POST['modal-email'])){
+        $body = "
+        <h2>Новый запрос на бронирование GRAND HILTON HOTEL</h2>
+        <b>Имя:</b> $name<br>
+        <b>Телефон:</b> $phone<br><br>
+        <b>Почта пользователя:</b>$modalEmail<br>
+        <b>Сообщение:</b><br>$message
+        ";
+    } else {
+        $body = "
+        <h2>Новое письмо</h2>
+        <b>Имя:</b> $name<br>
+        <b>Телефон:</b> $phone<br><br>
+        <b>Сообщение:</b><br>$message
+        ";
+    }
 }
 
 // Настройки PHPMailer

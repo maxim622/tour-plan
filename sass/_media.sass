@@ -497,6 +497,21 @@
     &__help-text
       margin-bottom: 15px
 
+  .modal
+    &__dialog
+      width: 280px
+      height: 390px
+      padding-right: 20px
+      padding-left: 20px
+
+    &__input
+      height: 35px
+    &__message
+      height: 70px
+    &__button
+      width: 100px
+      height: 50px
+
 @media (max-width: 576px)
 
   .container
@@ -692,3 +707,15 @@
   .contact
     &__important-hyphenation
       display: block
+
+      overflow: scroll
+
+@media (max-height: 400px)
+
+  .modal
+    &__overlay
+      overflow: scroll
+    &__dialog
+      top: 10px
+      position: absolute
+      transform: translate(-50% , 0)
