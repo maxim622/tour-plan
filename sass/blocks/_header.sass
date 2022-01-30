@@ -11,6 +11,12 @@
       cursor: pointer
       padding: 0
       margin: 0
+      &--close
+        width: 16px
+        height: 16px
+        background-image: url(../img/dark-close-button)
+        background-repeat: no-repeat
+        background-size: 100%
   &__search
     margin-right: auto
     margin-left: 108px
@@ -24,6 +30,9 @@
     &__item
       text-decoration: none
       color: $light
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
 
 .logo
   width: 177px
@@ -75,3 +84,15 @@
       display: none
     &__user
       display: none
+
+.navigation-buttons
+  &--close
+    width: 16px
+    height: 16px
+    background-image: url(../img/dark-close-button)
+    background-repeat: no-repeat
+    background-size: 100%
+  &__line
+    &--invisible
+      opacity: 0
+      background-color: #fff

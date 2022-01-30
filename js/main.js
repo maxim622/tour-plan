@@ -47,6 +47,9 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
 var menuButton = document.querySelector(".navigation-buttons");
 
 menuButton.addEventListener("click", function() {
-  document.querySelector(".navbar-menu").classList.toggle("navbar-menu--mobile--hidden")
-
+  document.querySelector(".navbar-menu").classList.toggle("navbar-menu--mobile--hidden"),
+  document.querySelector(".navigation-buttons").classList.toggle("navigation-buttons--close"),
+  document.querySelector(".navigation-buttons__line-1").classList.toggle("navigation-buttons__line--invisible")
+  document.querySelector(".navigation-buttons__line-2").classList.toggle("navigation-buttons__line--invisible")
+  document.querySelector(".navigation-buttons__line-3").classList.toggle("navigation-buttons__line--invisible")
 });
