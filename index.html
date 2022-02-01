@@ -541,6 +541,7 @@
               placeholder="Your email address"
               class="subscribe__input"
               name="email"
+              required
             />
             <button class="subscribe__button" type="submit">
               <span class="subscribe__button-text">Send</span>
@@ -894,18 +895,26 @@
               <h3 class="form__title">Send us a message</h3>
               <form class="form__area" action="send.php" method="post">
                 <div class="form__contact-area">
-                  <input
-                    class="form__input"
-                    type="text"
-                    placeholder="Your Full Name*"
-                    name="name"
-                  />
-                  <input
-                    class="form__input"
-                    type="text"
-                    placeholder="Phone Number*"
-                    name="phone"
-                  />
+                  <div class="form__input-wrapper">
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Your Full Name*"
+                      name="name"
+                      required
+                      minlength="2"
+                    />
+                  </div>
+                  <div class="form__input-wrapper">
+                    <input
+                      class="form__input input-phone"
+                      type="tel"
+                      placeholder="Phone Number*"
+                      name="phone"
+                      title="only in format +7 (999) 999-99-99"
+                      required
+                    />
+                  </div>
                 </div>
                 <textarea
                   class="form__message"
@@ -962,18 +971,23 @@
               type="text"
               placeholder="Your Full Name*"
               name="name"
+              required
+              minlength="2"
             />
             <input
-              class="modal__input"
-              type="text"
+              class="modal__input input-phone"
+              type="tel"
               placeholder="Phone Number*"
               name="phone"
+              title="only in format +7 (999) 999-99-99"
+              required
             />
             <input
               class="modal__input"
               type="email"
               placeholder="Email*"
-              name="modal-email"
+              name="modalEmail"
+              required
             />
             <textarea
               class="modal__message"
@@ -990,9 +1004,11 @@
       </div>
       <!-- /.modal__overlay -->
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="./js/parallax.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
