@@ -68,3 +68,9 @@ modalClose.on("click", function() {
   $(".modal__dialog").removeClass("modal__dialog--visible")
 });
 
+document.addEventListener('keydown', function(event){
+  if (event.code == 'Escape')
+  {
+    modalClose.click();
+  }
+});

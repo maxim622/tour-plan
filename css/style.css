@@ -1533,7 +1533,6 @@ template {
 
 .footer {
   background-color: #0A223D;
-  padding-bottom: 46px;
 }
 
 .footer-wrapper {
@@ -1544,7 +1543,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 46px;
 }
 
 .footer-bottom {
