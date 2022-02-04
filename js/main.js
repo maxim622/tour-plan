@@ -54,8 +54,8 @@ menuButton.addEventListener("click", function() {
   document.querySelector(".navigation-buttons__line-3").classList.toggle("navigation-buttons__line--invisible")
 });
 
-var modal  = $(".booking__button")
-var modalClose = $(".modal__close-button")
+var modal  = $(".form-button");
+var modalClose = $(".modal__close-button");
 
 modal.on("click", function() {
   $(".modal__overlay").addClass("modal__overlay--visible")
@@ -68,3 +68,53 @@ modalClose.on("click", function() {
   $(".modal__dialog").removeClass("modal__dialog--visible")
 });
 
+document.addEventListener('keydown', function(event){
+  if (event.code == 'Escape')
+  {
+    modalClose.click();
+  }
+});
+
+$(".modal__area").validate({
+  errorClass: "modal__error",
+  messages: {
+    name: { 
+      required: "*Please specify your name",
+      minlength: "*name must be no shorter than 2 characters"
+    }, 
+    phone: "*Please specify your phone number",
+    modalEmail: {
+      required: "*We need your email",
+      pattern: "*We need your",
+      modalEmail: "*Incorrect format"
+    }
+  }
+});
+
+
+$(".form__area").validate({
+  errorClass: "form__error",
+  messages: {
+    name: { 
+      required: "*Please specify your name",
+      minlength: "*name must be no shorter than 2 characters"
+    }, 
+    phone: "*Please specify your phone number",
+  }
+});
+
+$(".subscribe__field").validate({
+  errorClass: "subscribe__error",
+  messages: {
+    email: {
+      required: "*We need your email address to contact you",
+      email: "*Your email address must be in the format of name@domain.com"
+    }
+  }
+});
+
+$(document).ready(function(){
+   $('.input-phone').mask('+7 (000) 000-00-00');
+});
+
+AOS.init();

@@ -9,7 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
-$modalEmail = $_POST['modal-email'];
+$modalEmail = $_POST['modalEmail'];
 
 // Формирование самого письма
 $title = "Новое письмо пользователя Best tour plane";

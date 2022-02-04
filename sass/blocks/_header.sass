@@ -33,7 +33,10 @@
       font-weight: bold
       font-size: 14px
       line-height: 18px
-
+      &:hover
+        color: $gray
+        &:active
+          color: $text-color
 .logo
   width: 177px
 
@@ -53,6 +56,8 @@
     line-height: 15px
     color: $text-color
     border: none
+    &:focus
+      outline: none
   &__button
     position: absolute
     right: 0
@@ -76,8 +81,10 @@
     object-fit: cover
     margin-right: 18px
   &__name
+    display: block
     font-size: 14px
     line-height: 18px
+
 .navbar
   &-menu
     &__search

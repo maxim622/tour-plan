@@ -43,6 +43,9 @@
       right: 0
       background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
     &__content
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
       position: relative
       width: 100%
       height: 100%
@@ -50,25 +53,19 @@
       padding-right: 29px
       z-index: 1
     &__title
-      position: absolute
-      left: 26px
-      bottom: 72px
-      right: 29px
       display: flex
-      align-content: end
+      align-content: flex-end
       margin-top: 0
-      margin-bottom: 0
+      margin-bottom: 18
       font-style: normal
       font-weight: bold
       font-size: 16px
       line-height: 20px
       color: $light
     &__button
-      position: absolute
-      left: 26px
-      bottom: 24px
       width: 100px
-      height: 30px
+      margin-right: 20px
+      padding: 7px 21px
       background-color: $primar
       border-radius: 4px
       font-family: Nunito

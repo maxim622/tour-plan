@@ -1,10 +1,8 @@
 .footer
   background-color: $dark
-  padding-bottom: 46px
   &-wrapper
     display: flex
     flex-direction: column
-    padding-bottom: 46px
   &-bottom
     display: block
     height: 145px
@@ -32,7 +30,7 @@
       line-height: 15px
       color: inherit
   &-main
-    padding-top: 102px
+    padding-top: 104px
     padding-bottom: 0
     flex-shrink: 0
     display: grid
@@ -139,6 +137,8 @@
     font-size: 14px
     line-height: 23px
     color: $footer-text-color
+    &-link
+      color: $footer-text-color
   &__icon-wrapper
     margin-right: 22px
     margin-left: 3px
@@ -167,7 +167,7 @@
   &__input
     padding-left: 23px
     padding-right: 23px
-    flex-basis: 47%
+    width: 100%
     height: 50px
     background: $light
     font-weight: normal
@@ -176,6 +176,8 @@
     color: $text-color
     border: none
     border-radius: 4px
+    &-wrapper
+      flex-basis: 47%
   &__message
     padding: 18px 23px
     margin-bottom: 22px
@@ -211,3 +213,5 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__error
+    color: $primar
