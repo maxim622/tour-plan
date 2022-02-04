@@ -119,7 +119,6 @@
   .footer
     &-main
       padding-top: 73px
-      padding-bottom: 56px
       grid-template: min(213px) min(223px) min(406px) minmax(317px , 317px) / minmax(204px , 204px) minmax(330px , 330px) minmax(220px , 220px)
       &__list-1
         grid-column: 1 / 2
@@ -145,6 +144,8 @@
     &-link
       padding-top: 0px
       grid-row: 1 / 2
+    &-bottom
+      justify-content: space-between
 
   .form
     width: 539px
@@ -186,6 +187,7 @@
       padding-top: 0
       padding-bottom: 33px
     &-main
+      padding-bottom: 56px
       grid-template: min(193px) min(223px) min(366px) minmax(317px , 317px) / minmax(188px , 188px) minmax(311px , 311px) minmax(200px , 200px)
       padding-top: 36px
       &__social
@@ -306,6 +308,11 @@
         height: 35px
         font-size: 12px
         line-height: 15px
+        &-name
+          width: 90px
+          min-width: 90px
+      &__price
+        margin-right: 0
     &__old-price
       margin-top: 5px
 
@@ -314,7 +321,7 @@
       display: none
     &__left
       justify-content: space-between
-    &__button-flesh-offer
+    &__flesh-offer
       order: -1
       margin: 0
     &__hotel-stars
@@ -360,7 +367,9 @@
       font-size: 30px
       line-height: 38px
     &__field
+      min-width: 200px
       width: 100%
+      margin-left: 0
 
   .reviews
     &-wrapper
@@ -638,6 +647,13 @@
     &__title
       font-size: 22px
       line-height: 28px
+
+  .message
+    height: 300px
+    &__title
+      font-size: 26px
+    &__text
+      font-size: 18px
 
 @media (max-width: 480px)
   .container

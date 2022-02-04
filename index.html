@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon" />
+    <link type="image/x-icon" href="./img/favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +15,6 @@
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/aos.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Best Tour Plan</title>
   </head>
   <body>
@@ -37,7 +39,7 @@
             </button>
           </form>
           <a href="#" class="user navbar__user">
-            <img src="img/avatar.png" alt="avatar" class="user__avatar" />
+            <img src="img/avatar.jpeg" alt="avatar" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
           <!-- /.user -->
@@ -169,7 +171,7 @@
             </div>
             <!-- ./stars -->
             <h1 class="hotel-name info__hotel-name">Grand Hilton hotel</h1>
-            <button class="info__button-flesh-offer">Flesh Offer</button>
+            <div class="info__flesh-offer">Flesh Offer</div>
             <span class="info__half-board"
               >Half-Board/ All Inclusive + Complimentary Activities + Child
               Stays Free</span
@@ -206,14 +208,14 @@
               <div class="hotel-swiper__slide swiper-slide">
                 <img
                   class="hotel-swiper__slide-foto"
-                  src="img/slides/slide-1.jpg"
+                  src="img/slides/slide-2.jpg"
                   alt="hotel-foto"
                 />
               </div>
               <div class="hotel-swiper__slide swiper-slide">
                 <img
                   class="hotel-swiper__slide-foto"
-                  src="img/slides/slide-1.jpg"
+                  src="img/slides/slide-3.jpg"
                   alt="hotel-foto"
                 />
               </div>
@@ -269,7 +271,9 @@
                 />
                 <span class="booking__quick-phone-number">12100</span>
               </a>
-              <button class="booking__button">View Other Options</button>
+              <button class="booking__button form-button">
+                View Other Options
+              </button>
             </div>
             <!-- ./booking -->
             <div class="map" data-aos="zoom-in-left" data-aos-duration="1000">
@@ -356,7 +360,9 @@
               <span class="main-card__old-price card-old-price">$ 10,500</span>
               <div class="main-card__booking card-booking">
                 <strong class="card-booking__price">$ 8,500</strong>
-                <button class="card-booking__book-button">Book Now</button>
+                <button class="card-booking__book-button form-button">
+                  <span class="card-booking__book-button-name">Book Now</span>
+                </button>
               </div>
               <!-- ./main-card__booking -->
             </div>
@@ -409,7 +415,9 @@
               <span class="card__old-price card-old-price">$ 8,500</span>
               <div class="card__booking card-booking">
                 <strong class="card-booking__price">$ 3,000</strong>
-                <button class="card-booking__book-button">Book Now</button>
+                <button class="card-booking__book-button form-button">
+                  <span class="card-booking__book-button-name">Book Now</span>
+                </button>
               </div>
               <!-- ./card__booking -->
             </div>
@@ -462,7 +470,9 @@
               <span class="card__old-price card-old-price">$ 10,500</span>
               <div class="card__booking card-booking">
                 <strong class="card-booking__price">$ 9,500</strong>
-                <button class="card-booking__book-button">Book Now</button>
+                <button class="card-booking__book-button form-button">
+                  <span class="card-booking__book-button-name">Book Now</span>
+                </button>
               </div>
               <!-- ./card__booking -->
             </div>
@@ -515,7 +525,9 @@
               <span class="card__old-price card-old-price">$ 4,500</span>
               <div class="card__booking card-booking">
                 <strong class="card-booking__price">$ 2,500</strong>
-                <button class="card-booking__book-button">Book Now</button>
+                <button class="card-booking__book-button form-button">
+                  <span class="card-booking__book-button-name">Book Now</span>
+                </button>
               </div>
               <!-- ./card__booking -->
             </div>
@@ -568,7 +580,9 @@
               <span class="card__old-price card-old-price">$ 6,500</span>
               <div class="card__booking card-booking">
                 <strong class="card-booking__price">$ 3,500</strong>
-                <button class="card-booking__book-button">Book Now</button>
+                <button class="card-booking__book-button form-button">
+                  <span class="card-booking__book-button-name">Book Now</span>
+                </button>
               </div>
               <!-- ./card__booking -->
             </div>
@@ -624,7 +638,7 @@
     <section class="reviews">
       <div class="container">
         <div class="reviews-wrapper">
-          <h2 class="reviews__title">What people thinks about us</h2>
+          <h2 class="reviews__title">What people think about us</h2>
           <div class="reviews-swiper swiper">
             <div class="reviews-swiper__wrapper swiper-wrapper">
               <div class="reviews-swiper__slide swiper-slide">
@@ -760,7 +774,9 @@
                 <h3 class="activities-card__title">
                   The curious corner <br />of chamarel
                 </h3>
-                <button class="activities-card__button">Book Now</button>
+                <button class="activities-card__button form-button">
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- activities-card -->
@@ -778,7 +794,9 @@
                 <h3 class="activities-card__title">
                   Gymkhana club golf <br />course
                 </h3>
-                <button class="activities-card__button">Book Now</button>
+                <button class="activities-card__button form-button">
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- activities-card -->
@@ -796,7 +814,9 @@
                 <h3 class="activities-card__title">
                   Tamarind falls hiking <br />trip - full day
                 </h3>
-                <button class="activities-card__button">Book Now</button>
+                <button class="activities-card__button form-button">
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- activities-card -->
@@ -814,7 +834,9 @@
                 <h3 class="activities-card__title">
                   The blue marine discovery <br />quest
                 </h3>
-                <button class="activities-card__button">Book Now</button>
+                <button class="activities-card__button form-button">
+                  Book Now
+                </button>
               </div>
             </div>
             <!-- activities-card -->
