@@ -12,9 +12,17 @@
     &--hover
       &:hover
         color: #790a1f
-    ::after
-      content: "/"
-      margin: 0 3px
+        text-decoration: underline
+      &:active
+        color: $text-color
+        text-decoration: none
+    &:not(:first-child)
+      &::before
+        content: "/"
+        margin: 0 1px 0 2px
   &__page
     font-size: 10px
     line-height: 13px
+    &::before
+      content: "/"
+      margin: 0 1px 0 2px

@@ -59,13 +59,17 @@
       background-size: 10px
       background-color: transparent
       cursor: pointer
+      &:hover
+        border-radius: 20%
+        background-color: #80808054
+      &:active
+        background-color: #20202000
       &--prev
         left: 18px
         background-image: url(../img/slides/swipe-left.svg)
       &--next
         right: 18px
         background-image: url(../img/slides/swipe-right.svg)
-
 .stars
   display: flex
   justify-content: start

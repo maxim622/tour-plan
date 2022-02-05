@@ -52,6 +52,16 @@
   .logo
     width: 132px
 
+  .breadcrumb
+    &__link
+      &--hover
+        &:hover
+          color: $text-color
+          text-decoration: none
+        &:active
+          color: $text-color
+          text-decoration: none
+
   .hotel
     &-grid
       &__right-block
@@ -63,6 +73,12 @@
       width: 100%
       margin-bottom: 30px
       flex-basis: 100%
+      &__button
+        &:hover
+          border-radius: 20%
+          background-color: #20202000
+        &:active
+          background-color: #20202000
 
   .booking
     width: 370px
@@ -104,6 +120,12 @@
       &__message
         margin-left: 62px
         margin-right: 62px
+      &__button
+        &:hover
+          border-radius: 20%
+          background-color: #00000000
+        &:active
+          background-color: #00000000
 
   .activities
     &-wrapper
@@ -150,6 +172,26 @@
   .form
     width: 539px
 
+  .social
+    &__link
+      &:hover
+        border-radius: 50%
+        background-color: #00000000
+      &:active
+        background-color: #00000000
+
+  .link--hover
+    &:hover
+      text-decoration: none
+      &:active
+        text-decoration: none
+
+  .button--hover
+    &:hover
+      background-color: $primar
+    &:active
+      background-color: $primar
+
 @media (max-width: 768px)
   .container
     width: 700px
@@ -159,6 +201,13 @@
       width: 340px
     &-container
       width: 673px
+    &-menu
+      &__item
+        &:hover
+          color: $light
+        &:active
+          color: $light
+
   .booking
     width: 340px
 
