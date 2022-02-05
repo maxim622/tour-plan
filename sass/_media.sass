@@ -49,12 +49,16 @@
       &__item
         font-size: 12px
         line-height: 15px
+        &:hover
+          color: $light
+          &:active
+            color: $light
   .logo
     width: 132px
 
   .breadcrumb
     &__link
-      &--hover
+      &-hover
         &:hover
           color: $text-color
           text-decoration: none
@@ -180,13 +184,13 @@
       &:active
         background-color: #00000000
 
-  .link--hover
+  .link-hover
     &:hover
       text-decoration: none
       &:active
         text-decoration: none
 
-  .button--hover
+  .button-hover
     &:hover
       background-color: $primar
     &:active
